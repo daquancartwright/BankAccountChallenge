@@ -10,5 +10,13 @@ public class Main {
         System.out.println("Checking Balance: " + DaQuanAccount.getCheckingBalance());
         System.out.println("Savings Balance: " + DaQuanAccount.getSavingsBalance());
 
+        // Withdraw
+        DaQuanAccount.withdraw("checking", 100);
+        DaQuanAccount.withdraw("savings", 200);
+
+        // Check Balance
+        System.out.println("Checking Balance: " + DaQuanAccount.getCheckingBalance());
+        System.out.println("Savings Balance: " + DaQuanAccount.getSavingsBalance());
+
     }
 }

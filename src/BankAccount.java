@@ -51,7 +51,6 @@ public class BankAccount {
             checkingBalance -= amount;
         } else if (account.equals("savings")) {
             if (savingsBalance < amount) {
-                if (savingsBalance < amount) {
                     System.out.println("Insufficient funds in Savings account. Please withdraw a smaller amount");
                     return;
                 }
@@ -62,7 +61,7 @@ public class BankAccount {
             }
             totalMoneyStored -= amount;
         }
-    }
+
 
     // Create a method to see the total money from the checking and savings.
     public double getTotalBalance() {
